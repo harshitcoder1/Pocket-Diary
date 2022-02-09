@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context="com.example.harshit.projectdemo.ForgotPassFragment">
+
+    <TextView
+        android:id="@+id/alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f00"
+        android:visibility="gone"
+        android:gravity="center"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/securityquestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="security question"
+        android:inputType="text"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/securityanswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="security answer"
+        android:inputType="text"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset password"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="#ff0"
+        android:textColor="#000"/>
+
+</LinearLayout>

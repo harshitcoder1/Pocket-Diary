@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/m6"
+        android:icon="@drawable/ic_action_name2"
+        android:title="share"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/m1"
+        android:icon="@drawable/ic_action_name1"
+        android:title="add Category"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/m2"
+        android:title="About us"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/m3"
+        android:title="feedback"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/m4"
+        android:title="help"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/m5"
+        android:title="contact us"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/m8"
+        android:title="change password"
+        android:visible="true" />
+    <item
+        android:id="@+id/m7"
+        android:title="logout"
+        android:visible="true" />
+</menu>

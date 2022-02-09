@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.harshit.projectdemo.Registration">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp">
+
+                        <TextView
+                            android:id="@+id/alert"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#f00"
+                            android:visibility="gone"
+                            android:gravity="center"/>
+
+                        <TableLayout
+                            android:id="@+id/tb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                                <TableRow
+                                    android:id="@+id/tr1"
+                                    android:visibility="visible" >
+                                        <!--<TextView
+                                            android:layout_weight="1"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="right"
+                                            android:textSize="20sp"
+                                            android:text="username :"/>-->
+                                        <EditText
+                                            android:id="@+id/username"
+                                            android:layout_weight="1"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:hint="enter username"
+                                            android:inputType="text"
+                                            android:maxLines="1"/>
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tr2"
+                                    android:visibility="visible" >
+                                        <!--<TextView
+                                            android:layout_weight="1"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:text="password :"
+                                            android:textSize="20sp"
+                                            android:gravity="right"/>-->
+                                        <EditText
+                                            android:id="@+id/password"
+                                            android:layout_weight="1"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:inputType="numberPassword"
+                                            android:maxLength="6"
+                                            android:hint="enter password"/>
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tr3"
+                                    android:visibility="visible">
+                                       <!-- <TextView
+                                            android:layout_weight="1"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:text="confirm password :"
+                                            android:textSize="20sp"
+                                            android:gravity="right"/>-->
+                                        <EditText
+                                            android:id="@+id/confirmpassword"
+                                            android:layout_weight="1"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:inputType="numberPassword"
+                                            android:maxLength="6"
+                                            android:hint="confirm password"/>
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tr4"
+                                    android:visibility="visible" >
+                                        <!--<TextView
+                                            android:layout_weight="1"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:text="security question :"
+                                            android:textSize="20sp"
+                                            android:gravity="right"/>-->
+                                        <!--<EditText
+                                            android:id="@+id/securityquestion"
+                                            android:layout_weight="1"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"/>-->
+                                        <AutoCompleteTextView
+                                            android:layout_weight="1"
+                                            android:id="@+id/securityquestion"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:hint="security question"
+                                            android:inputType="text"
+                                            android:maxLines="1"/>
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tr5"
+                                    android:visibility="visible" >
+                                        <!--<TextView
+                                            android:layout_weight="1"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:text="security answer :"
+                                            android:textSize="20sp"
+                                            android:gravity="right"/>-->
+                                        <EditText
+                                            android:id="@+id/securityanswer"
+                                            android:layout_weight="1"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:hint="security answer"
+                                            android:inputType="text"
+                                            android:maxLines="1"/>
+                                </TableRow>
+                        </TableLayout>
+
+                        <Button
+                            android:id="@+id/submit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="signup"
+                            android:textSize="20sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center"
+                            android:background="#00f"
+                            android:textColor="#fff"/>
+                </LinearLayout>
+        </ScrollView>
+
+
+</LinearLayout>
